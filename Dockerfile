@@ -11,6 +11,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     xvfb \
     libxcursor1 \
+    libxinerama1 \
+    libxrandr2 \
+    libxi6 \
     libfontconfig \
     zip \
     && rm -rf /var/lib/apt/lists/*
@@ -27,3 +30,4 @@ RUN wget https://github.com/godotengine/godot-builds/releases/download/${GODOT_V
     && mkdir -p ~/.config/godot
 
 RUN godot -v -e --quit --headless ${GODOT_TEST_ARGS}
+#RUN xvfb-run godot -v -e --quit --audio-driver Dummy --display-driver x11 --rendering-driver opengl3 --screen 0 --continue
