@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     xvfb \
     libxcursor1 \
+    libdbus-1-3 \
     libxkbcommon-x11-0 \
     libxinerama1 \
     libxrandr2 \
