@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     wget \
     xvfb \
+    libxcursor1 \
+    libfontconfig \
     zip \
     && rm -rf /var/lib/apt/lists/*
 
