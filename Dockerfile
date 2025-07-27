@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     zip \
     && rm -rf /var/lib/apt/lists/*
 
-ARG GODOT_VERSION="4.2.2"
+ARG GODOT_VERSION="4.4.1"
 ARG RELEASE_NAME="stable"
 ARG GODOT_TEST_ARGS=""
 ARG GODOT_PLATFORM="linux.x86_64"
